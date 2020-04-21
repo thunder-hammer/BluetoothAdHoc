@@ -12,7 +12,7 @@ port = 25
 s = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
 s.connect((serverMACAddress, port))
 
-s.close()
+s.
 
 def sender(s):
     while 1:
@@ -23,9 +23,9 @@ def sender(s):
 
 def receiver(s):
     size = 1024
-    client, clientInfo = s.accept()
+    #client, clientInfo = s.accept()
     while 1:
-        data = client.recv(size)
+        data = s.listen(size)
         if data:
             print(data)
 
@@ -34,3 +34,4 @@ rcv = threading.Thread(target=sender, args=(s,))
 rcv.start()
 snd.start()
 
+s.close()
