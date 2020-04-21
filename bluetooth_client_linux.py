@@ -13,5 +13,5 @@ while 1:
     text = input() # Note change to the old (Python 2) raw_input
     if text == "quit":
         break
-    s.send(text)
+    s.send(text.encode())
 s.close()
