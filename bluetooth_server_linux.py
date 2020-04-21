@@ -6,7 +6,7 @@ Bluetooth using PyBluez (with Python 2).
 import bluetooth
 
 hostMACAddress = '70:C9:4E:71:88:34' # The MAC address of a Bluetooth adapter on the server. The server might have multiple Bluetooth adapters.
-port = 1025
+port = 25
 backlog = 1
 size = 1024
 s = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
