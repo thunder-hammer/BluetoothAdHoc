@@ -6,7 +6,7 @@ using PyBluez (with Python 2).
 import bluetooth
 
 serverMACAddress = '70:C9:4E:71:88:34'
-port = 1025
+port = 25
 s = bluetooth.BluetoothSocket(bluetooth.RFCOMM)
 s.connect((serverMACAddress, port))
 while 1:
