@@ -23,9 +23,9 @@ def sender(s):
 
 def receiver(s):
     size = 1024
-    client, clientInfo = s.accept()
+    #client, clientInfo = s.accept()
     while 1:
-        data = client.recv(size)
+        data = s.recv(size)
         if data:
             print(data)
 
